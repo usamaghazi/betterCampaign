@@ -1,10 +1,9 @@
 import React from 'react';
-import Header from '../components/Header/Header';
+import Conversie from '../components/Conversie/Conversie';
 const ThirdPage = () =>{
     return(
         <>
-        <Header/>
-        <h1>Content Here</h1>
+        <Conversie/>
         </>
     ) 
 }

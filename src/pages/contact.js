@@ -1,10 +1,9 @@
 import React from 'react';
-import Header from '../components/Header/Header';
+import Contact from '../components/Contact/Contact';
 const FourthPage = () =>{
     return(
         <>
-        <Header/>
-        <h1>Content Here</h1>
+        <Contact/>
         </>
     ) 
 }

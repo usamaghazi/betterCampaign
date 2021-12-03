@@ -8,11 +8,13 @@ const Header = () => {
         style={{ backgroundColor: "#222b38", padding: "1rem" }}
       >
         <div className="container-fluid">
+        <Link to="/">
           <a className="navbar-brand mx-3 text-white">
-            <Link to="/">
-              <img src="logo.png" className="img-responsive" />
-            </Link>
+            
+              <img src="Logo.png" className="img-responsive" />
+            
           </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

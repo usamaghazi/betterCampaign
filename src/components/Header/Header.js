@@ -8,12 +8,10 @@ const Header = () => {
         style={{ backgroundColor: "#222b38", padding: "1rem" }}
       >
         <div className="container-fluid">
-        <Link to="/">
-          <a className="navbar-brand mx-3 text-white">
-            
+          <Link to="/">
+            <a className="navbar-brand mx-3 text-white">
               <img src="Logo.png" className="img-responsive" />
-            
-          </a>
+            </a>
           </Link>
           <button
             className="navbar-toggler"
@@ -31,7 +29,7 @@ const Header = () => {
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link to="/webdesign" style={{ textDecoration: "none" }}>
                 <li className="nav-item">
                   <a
                     className="nav-link active text-white h6 m-3"

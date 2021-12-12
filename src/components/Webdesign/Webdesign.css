@@ -1,0 +1,287 @@
+.TextHeader {
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 900;
+}
+.TextParagraph {
+  font-size: 65px;
+  font-weight: 800;
+  font-family: "Merriweather", serif;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.SecondPara {
+  font-size: 22px;
+  color: white;
+}
+.Button {
+  padding: 0%;
+  margin-bottom: 10%;
+  margin-top: 0%;
+}
+.Image {
+  margin-top: 8rem;
+}
+.PreHeader {
+  font-family: "Open Sans";
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #868686;
+  margin-bottom: 14px;
+}
+.EntityHeader {
+  font-size: 46px;
+  /* font-size: 1.4444444444444rem; */
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  line-height: 1;
+  color: #3a3a3a;
+}
+.Paragraph {
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  color: #3a3a3a;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+.ListStyle {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+}
+.ListIconStyle {
+  color: #00fa96;
+  font-size: 20px;
+}
+.ListText {
+  margin-left: 5%;
+  margin-top: -0.5%;
+  font-size: 21px;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.UnOrderList {
+  margin-top: 25%;
+}
+.NoticeBoxContainer {
+  margin-top: 7%;
+}
+.NoticeBox {
+  background-color: #222b38;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px;
+  padding: 5%;
+}
+.NoticeBoxHeading {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Merriweather", serif;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.ProtfolioHeader {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Merriweather", serif;
+  line-height: 1;
+  color: #3a3a3a;
+}
+.ItemsContainer {
+  margin-top: 7%;
+}
+.Items {
+  background-color: #f7f7f7;
+  padding: 30%;
+  margin-top: 2%;
+  /* margin-right: 5%; */
+}
+.ProtfolioImage {
+  padding: 20%;
+  background-color: #222b38;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.SecondParagraph {
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  color: #3a3a3a;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* background-color: red; */
+}
+.BoxSize {
+  height: 60vh;
+}
+.BoxSizeThird {
+  height: 50vh;
+}
+.Number {
+  color: #4efa96;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.BoxHeading {
+  margin-bottom: 20px;
+}
+.BoxDescription {
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: 800px;
+}
+
+/* .NoticeBoxPara {
+  font-size: 22px;
+  color: white;
+} */
+@media (min-width: 992px) {
+  .Paragraph {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1024px) {
+  .TextParagraph {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .Image {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .Button {
+    margin-bottom: 0%;
+  }
+  .Image {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .Paragraph {
+    font-size: 19px;
+  }
+  .UnOrderList {
+    margin-top: 10%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .SecondParagraph {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .TextHeader {
+    font-size: 11px;
+  }
+  .TextParagraph {
+    font-size: 34px;
+  }
+  .SecondPara {
+    font-size: 18px;
+  }
+  .Paragraph {
+    font-size: 19px;
+  }
+  .SecondParagraph {
+    font-size: 19px;
+  }
+}
+
+/*Extra Large*/
+@media (min-width: 1200px) {
+  .SecondParagraph {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* background-color: rgb(37, 194, 186); */
+  }
+}
+/*Large*/
+@media (max-width: 1199px) {
+  .SecondParagraph {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* background-color: greenyellow; */
+  }
+}
+/*Medium*/
+@media (max-width: 991px) and (min-width: 768px) {
+  .SecondParagraph {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* background-color: orange; */
+  }
+  .BoxSize {
+    height: 95vh;
+  }
+}
+/*Small*/
+@media (max-width: 767px) and (min-width: 576px) {
+  .ListText {
+    margin-left: 4%;
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .NoticeBoxHeading {
+    font-size: 30px;
+  }
+  .ProtfolioHeader {
+    font-size: 40px;
+  }
+  .SecondParagraph {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* background-color: red; */
+  }
+  .BoxSize {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 575px) and (min-width: 10px) {
+  .ListText {
+    margin-left: 3%;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .ListIconStyle {
+    font-size: 15px;
+  }
+  .NoticeBoxHeading {
+    font-size: 25px;
+  }
+  .NoticeBoxContainer {
+    padding-right: 5%;
+    margin-left: 1%;
+  }
+  .ProtfolioHeader {
+    font-size: 30px;
+  }
+  .SecondParagraph {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* background-color: rgb(95, 81, 219); */
+  }
+  .BoxSize {
+    height: 85vh;
+    padding-bottom: 10px;
+  }
+  .BoxDescription {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+  }
+}

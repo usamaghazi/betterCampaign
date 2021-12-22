@@ -4,6 +4,7 @@ import { faSquare } from '@fortawesome/free-regular-svg-icons'
 import Header from '../Header/Header';
 import HeaderBottom from './HeaderBottom';
 import Button from '../Button/Button';
+import Footer from './Footer/Footer';
 import  './Webdesign';
 
 const Webdesign = () => {
@@ -195,6 +196,7 @@ return (
           </div>
         </div>
       </div>
+      <Footer/>
     </>
 )
 

@@ -1,74 +1,69 @@
-import React from "react"
+import React, { useState } from "react";
 import { Link } from "gatsby"
+import { Nav, Navbar } from "react-bootstrap";
+import  './Header.css';
+
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa";
+
 const Header = () => {
+  const [showCloseButton, setShowCloseButton] = useState(false);
+
   return (
     <>
-      <nav
-        className="navbar navbar-expand-lg navbar-light"
-        style={{ backgroundColor: "#222b38", padding: "1rem" }}
+      <Navbar
+        expand="lg"
+        className={showCloseButton ?  'navBar2': 'navBar1'}
       >
-        <div className="container-fluid">
-          <Link to="/">
-            <a className="navbar-brand mx-3 text-white">
-              <img src="Logo.png" className="img-responsive" />
-            </a>
+        
+        <Navbar.Brand className="mx-3">
+        <Link to='/'>
+          <img src="Logo.png" className="img-responsive" />
           </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul className="navbar-nav">
-              <Link to="/webdesign" style={{ textDecoration: "none" }}>
-                <li className="nav-item">
-                  <a
-                    className="nav-link active text-white h6 m-3"
-                    aria-current="page"
-                  >
-                    Webdesign
-                  </a>
-                </li>
-              </Link>
-              <Link to="/" style={{ textDecoration: "none" }}>
-                <li className="nav-item">
-                  <a className="nav-link text-white h6 m-3">
-                    Zoekmachine optimalisatie(SEO)
-                  </a>
-                </li>
-              </Link>
-              <Link to="/" style={{ textDecoration: "none" }}>
-                <li className="nav-item">
-                  <a className="nav-link text-white h6 m-3">Google Ads</a>
-                </li>
-              </Link>
-              <Link to="/conversie" style={{ textDecoration: "none" }}>
-                <li className="nav-item">
-                  <a className="nav-link text-white h6 m-3">
-                    Conversie optimalisatie(CRO)
-                  </a>
-                </li>
-              </Link>
-              <Link to="/contact" style={{ textDecoration: "none" }}>
-                <li className="nav-item">
-                  <a className="nav-link text-white h6 m-3">Contact</a>
-                </li>
-              </Link>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </>
-  )
-}
+        </Navbar.Brand>
+        
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          style={{ border: "none", marginRight: "1rem" }}
+          onClick={() => setShowCloseButton(!showCloseButton)}
+        >
+          {showCloseButton ? (
+            <FaTimes color="#00fa96" style={{ fontSize: "1.5rem" }} />
+          ) : (
+            <GiHamburgerMenu color="#00fa96" style={{ fontSize: "1.7rem" }} />
+          )}
+        </Navbar.Toggle>
 
-export default Header
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+          <Link to='/webdesign' className={showCloseButton ? 'list2' : 'list1'}>
+              Webdesign
+            </Link>
+           
+            <Link to='/zoekmachine' className={showCloseButton ? 'list2' : 'list1'}>
+              Zoekmachine optimalisatie(SEO)
+              </Link>
+           
+            
+              <Link to='/googleads' className={showCloseButton ? 'list2' : 'list1'}>
+              Google Ads
+              </Link>
+            
+            
+              <Link to='/conversie' className={showCloseButton ? 'list2' : 'list1'}>
+              Conversie optimalisatie(CRO)
+              </Link>
+            
+            
+              <Link to='/contact' className={showCloseButton ? 'list2' : 'list1'}>
+              Contact
+              </Link>
+            
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </>
+  );
+};
+
+export default Header;

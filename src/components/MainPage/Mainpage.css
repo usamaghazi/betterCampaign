@@ -1,0 +1,6 @@
+.Root {
+  overflow: auto;
+}
+.OverFlow {
+  overflow-y: hidden;
+}

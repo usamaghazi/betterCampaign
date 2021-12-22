@@ -3,7 +3,7 @@ const Obj1 = {
 
   Name: "Zoekmachine optimalisatie",
   content:
-    "Wil jij hoog ranken in de zoekresultaten? Onze aasfzzd content, techniek en autoriteit.",
+    "Wil jij hoog ranken in de zoekresultaten? Onze SEO specialisten adviseren over content, techniek en autoriteit.",
 };
 
 const Obj2 = {

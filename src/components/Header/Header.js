@@ -18,7 +18,7 @@ const Header = () => {
         
         <Navbar.Brand className="mx-3">
         <Link to='/'>
-          <img src="Logo.png" className="img-responsive" />
+          <img src={`../../../Logo.png`} className="img-responsive" />
           </Link>
         </Navbar.Brand>
         

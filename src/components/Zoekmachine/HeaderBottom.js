@@ -48,7 +48,7 @@ const HeaderBottom = () => {
           </div>
           <div className="col-xl-6">
             <img
-              src="Placeholder.png"
+              src={`../../../Placeholder.png`}
               className="img-responsive w-100"
               className="Image"
               style={{marginTop:'2rem',height:'400px',width:'600px' }}
